@@ -1,4 +1,6 @@
-package crypto.com.cryptoview;
+package crypto.com.cryptoview.network;
+
+import crypto.com.cryptoview.RetrofitClient;
 
 /**
  * Created by vishal on 18/01/18.
