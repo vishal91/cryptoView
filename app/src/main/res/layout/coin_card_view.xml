@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/coin_image_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/coin_abbre_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/coin_image_view"
+            android:layout_toRightOf="@id/coin_image_view"
+            tools:text="BTC"
+            />
+
+        <TextView
+            android:id="@+id/coin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coin_abbre_view"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@id/coin_abbre_view"
+            tools:text="Bitcoin"
+            />
+
+        <TextView
+            android:id="@+id/coin_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="$1234"
+            android:layout_alignTop="@id/coin_abbre_view"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/coin_value_text"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@id/coin_value_text"/>
+
+
+        <TextView
+            android:id="@+id/coin_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coin_value_text"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@id/coin_value_text"
+            tools:text="3%"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
